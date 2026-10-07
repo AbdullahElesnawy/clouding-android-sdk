@@ -1,0 +1,133 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ai.clouding",
+    "module": "chatwidget",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "ai.clouding",
+          "module": "chatwidget-core",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "chatwidget-1.0.0.aar",
+          "url": "chatwidget-1.0.0.aar",
+          "size": 898283,
+          "sha512": "6869c30393ffb27655eb3ea869dfa910bd55175266209bdf784d8b513654c12c5cfe19b05052bbd4e3a906317897f2df72dfea14fa7ada040b6852c50a3bea62",
+          "sha256": "ed1ee382d22ed0b6d8cad0a13959130de26bdc1a07eadf19ba1cbfa3d3fe7670",
+          "sha1": "adfbba931f700c850cb2019519cc3123572dd362",
+          "md5": "66e0a68ccfa2dd8ba8008e6a90e28d4a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2024.12.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.9.3"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "ai.clouding",
+          "module": "chatwidget-core",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "chatwidget-1.0.0.aar",
+          "url": "chatwidget-1.0.0.aar",
+          "size": 898283,
+          "sha512": "6869c30393ffb27655eb3ea869dfa910bd55175266209bdf784d8b513654c12c5cfe19b05052bbd4e3a906317897f2df72dfea14fa7ada040b6852c50a3bea62",
+          "sha256": "ed1ee382d22ed0b6d8cad0a13959130de26bdc1a07eadf19ba1cbfa3d3fe7670",
+          "sha1": "adfbba931f700c850cb2019519cc3123572dd362",
+          "md5": "66e0a68ccfa2dd8ba8008e6a90e28d4a"
+        }
+      ]
+    }
+  ]
+}
